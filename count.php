@@ -11,6 +11,6 @@ session_start();
   <title>Количество посещений</title>
 </head>
 <body>
-  <p>Третья страница была открыта: <?php echo $_SESSION['count'] ?></p>
+  <p>Третья страница была открыта: <?php echo $_SESSION['count'] ?? 0 ?></p>
 </body>
 </html>
